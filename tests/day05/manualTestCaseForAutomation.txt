@@ -1,0 +1,8 @@
+Test Case: Verify that all the links under the <ul> HTML tag are displayed enabled
+
+step 1: Open Chrome browser
+step 2: Navigate to "https://practice.cydeo.com/"
+step 3: The url should contain "practice.cydeo"
+step 4: The title should be "Practice"
+step 5: All the links under the <ul> HTML tag are visible and clickable
+Here is the x-path Locator for locating the link elements that are under the <ul> HTML tag: "//ul[@class='list-group']//a"
