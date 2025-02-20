@@ -7,4 +7,3 @@ console.log(number);
 
 console.log(letter);
 
-test("", async ({}) => {});
