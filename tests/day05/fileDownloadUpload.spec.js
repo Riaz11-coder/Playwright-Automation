@@ -28,15 +28,15 @@ test.describe("File Download", () => {
 
     let filePath = path.join(__dirname, "./uploads","TestUpload.txt");
 
-    await page.waitForTimeout(3000);
+    
 
     await page.setInputFiles("//input[@id='file-upload']",filePath);
 
-    await page.waitForTimeout(3000);
+    
 
     await page.click("//input[@id='file-submit']");
 
-    await page.waitForTimeout(3000);
+    
 
     await expect(page.getByText("File Uploaded!")).toBeVisible();
 

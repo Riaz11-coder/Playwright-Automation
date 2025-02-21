@@ -15,6 +15,6 @@ test("@env-test Testing environment variables", async ({ page }) => {
 
       await page.goto("https://practice.cydeo.com/basic_auth");
 
-      await page.waitForTimeout(3000);
+      
     });
 

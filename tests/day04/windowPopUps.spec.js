@@ -18,7 +18,7 @@ test.describe("Window PopUps", () => {
    expect(await newPage.title()).toBe("New Window");
    expect(await page.title()).toBe("Windows");
 
-    await page.waitForTimeout(3000);
+    
     await page.bringToFront();
 
   let firstWindowElement =  page.getByText("Opening a new window");
@@ -27,7 +27,7 @@ test.describe("Window PopUps", () => {
 
   console.log(firstWindowElement);
 
-    await page.waitForTimeout(3000);
+    
     await newPage.bringToFront();
 
   let secondWindowElement = newPage.getByText("New Window");
@@ -36,12 +36,9 @@ test.describe("Window PopUps", () => {
 
   console.log(secondWindowElement);
 
-   await page.waitForTimeout(3000);
+   
 
   });
 
-  test("2", async ({ page }) => {
-
-
-  });
+  
 });

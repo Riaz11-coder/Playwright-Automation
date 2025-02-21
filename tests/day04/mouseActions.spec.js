@@ -23,13 +23,13 @@ test.describe("Mouse Actions", () => {
 
   test("Hover", async ({ page }) => {
     await page.click("text='Hovers'");
-    // await page.waitForTimeout(3000);
+    
     // await page.hover("//img[@alt='User Avatar']");
 
     let elements = await page.locator("//img[@alt='User Avatar']").all();
 
     for (let element of elements) {
-        await page.waitForTimeout(1000);
+        
         await element.hover();
         
     }
@@ -45,7 +45,7 @@ test.describe("Mouse Actions", () => {
     
     let inputsLink = page.getByText("Inputs");
     await inputsLink.scrollIntoViewIfNeeded();
-    page.waitForTimeout(3000);
+    
     await inputsLink.click();
 
 
@@ -53,12 +53,12 @@ test.describe("Mouse Actions", () => {
 
   test("Drag and Drop", async ({ page }) => {
     await page.click("text='Drag and Drop'");
-    await page.waitForTimeout(3000);
+    
     //await page.dragAndDrop("#column-a", "#column-b");
     let squareA = page.locator("#column-a");
     let squareB = page.locator("#column-b");
     await squareA.dragTo(squareB);
-    await page.waitForTimeout(3000);
+    
 
   });
 });

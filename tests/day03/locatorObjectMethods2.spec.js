@@ -17,13 +17,11 @@ test.describe("Test Group", () => {
     await inputElement.click();
 
     let inputBox = page.locator("input[type='number']");
-    //wait three seconds.
-    await page.waitForTimeout(3000);
+    
 
     await inputBox.fill("50");
 
-    //wait three seconds.
-    await page.waitForTimeout(3000);
+    
 
     let inputValue = await inputBox.inputValue();
     console.log(inputValue);
