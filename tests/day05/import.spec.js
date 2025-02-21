@@ -1,5 +1,5 @@
-import { Hello, number, letter } from "./export.spec.js";
-import { test, expect } from "@playwright/test";
+import { Hello, number, letter } from "./export.js";
+
 
 console.log(Hello("Roger"));
 
